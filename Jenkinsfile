@@ -35,7 +35,7 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 echo "Running Docker container..."
-                sh 'docker run -d -p 3000:3000 --name crud-container1 crud-app'
+                sh 'docker run -d -p 3005:3000 --name crud-container1 crud-app'
             }
         }
     }
