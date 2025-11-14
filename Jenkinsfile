@@ -35,8 +35,7 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 echo "Running Docker container..."
-                docker rm -f crud-container || true
-                sh 'docker run -d -p 3005:3000 --name crud-container crud-app'
+                sh 'docker run -d -p 3005:3000 --name crud-container3 crud-app'
             }
         }
     }
