@@ -18,12 +18,12 @@ pipeline {
             }
         }
 
-        // stage('Run Tests') {
-        //     steps {
-        //         echo "Running automated tests..."
-        //         sh 'cd backend && npm test'
-        //     }
-        // }
+        stage('Run Tests') {
+            steps {
+                echo "Running automated tests..."
+                sh 'cd backend && npm test'
+            }
+        }
 
         stage('Build Docker Image') {
             steps {
